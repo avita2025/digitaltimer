@@ -1,46 +1,114 @@
-# Getting Started with Create React App
+# Digital Timer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive digital timer built with React and TypeScript featuring tick sound functionality.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- ⏰ **24-hour format display** (HH:MM:SS)
+- 🎵 **Tick sound** that plays every second when running
+- 🔊 **Sound toggle** in the top right corner
+- ▶️ **Start/Stop/Reset** functionality
+- 📱 **Responsive design** for all devices
+- 🎨 **Modern UI** with smooth animations
+- ⚡ **Immediate audio control** - stops instantly when buttons are clicked
 
-### `npm start`
+## How to Use
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. **Start Timer**: Click the "Start" button to begin counting from 00:00:00
+2. **Stop Timer**: Click "Stop" to pause the timer (keeps current time)
+3. **Reset Timer**: Click "Reset" to stop and reset to 00:00:00
+4. **Sound Control**: Click the 🔊 button in the top right to toggle sound on/off
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Audio Features
 
-### `npm test`
+- Tick sound plays every second when timer is running
+- Sound can be enabled/disabled with the toggle button
+- Audio stops immediately when timer stops or resets
+- Volume set to 50% for pleasant listening experience
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **React 18** with TypeScript
+- **CSS3** with modern gradients and animations
+- **HTML5 Audio API** for sound functionality
+- **Create React App** for project setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (version 14 or higher)
+- npm or yarn
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/digital-timer.git
+cd digital-timer
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install dependencies:
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Start the development server:
+```bash
+npm start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Learn More
+### Building for Production
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Structure
+
+```
+digital-timer/
+├── public/
+│   ├── timer.mp3          # Tick sound file
+│   └── index.html
+├── src/
+│   ├── App.tsx           # Main timer component
+│   ├── App.css           # Styling
+│   └── index.tsx         # App entry point
+└── README.md
+```
+
+## Customization
+
+### Changing the Tick Sound
+
+Replace the `public/timer.mp3` file with your own audio file. The app will automatically use the new sound.
+
+### Modifying the Timer
+
+The timer logic is in `src/App.tsx`. You can:
+- Change the time format
+- Modify the tick interval
+- Adjust the volume level
+- Customize the UI styling
+
+## Browser Compatibility
+
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Contributing
+
+Feel free to submit issues and enhancement requests!
+
+---
+
+**Enjoy your digital timer!** ⏰✨
