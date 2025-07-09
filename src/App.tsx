@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     // Initialize audio element - try timer.mp3 first, then tick.mp3
-    audioRef.current = new Audio('/timer.mp3');
+    audioRef.current = new Audio('./timer.mp3');
     audioRef.current.volume = 0.5; // Increased volume to 50%
     audioRef.current.preload = 'auto';
     
@@ -25,7 +25,7 @@ function App() {
       console.error('Audio error:', './timer.mp3');
       // Try tick.mp3 as fallback
       if (audioRef.current) {
-        audioRef.current.src = '/timer.mp3';
+        audioRef.current.src = './timer.mp3';
         audioRef.current.load();
       }
       setAudioError('Audio file not found or cannot be loaded');
