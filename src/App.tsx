@@ -25,7 +25,7 @@ function App() {
       console.error('Audio error:', e);
       // Try tick.mp3 as fallback
       if (audioRef.current) {
-        audioRef.current.src = '/tick.mp3';
+        audioRef.current.src = '/timer.mp3';
         audioRef.current.load();
       }
       setAudioError('Audio file not found or cannot be loaded');
