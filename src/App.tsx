@@ -22,7 +22,7 @@ function App() {
     });
     
     audioRef.current.addEventListener('error', (e) => {
-      console.error('Audio error:', e);
+      console.error('Audio error:', './timer.mp3');
       // Try tick.mp3 as fallback
       if (audioRef.current) {
         audioRef.current.src = '/timer.mp3';
